@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+  font-family: Montserrat, sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: #555555;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #139edc;
+  text-align: center;
+  padding: 50px 0;
+  color: #555555;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.py {
+  padding: 120px 0;
+}
+
+.bg-gray {
+  background-color: #f7f8f9;
+}
+
+/*********************
+navbar
+*********************/
+.navbar .linija {
+  display: block;
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(green), to(#1bafe9));
+  background: linear-gradient(to right, green, #1bafe9);
+  width: 10%;
+  height: 4px;
+  margin: 0 auto;
+  width: 100%;
+  height: 8px;
+  margin: 0px auto;
+}
+
+.navbar .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .row ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .row ul li {
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.navbar .row ul li a {
+  text-transform: uppercase;
+}
+
+.navbar .row ul li a:hover {
+  color: #1bafe9;
+  cursor: pointer;
+}
+
+/*********************
+Socials
+*********************/
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 40vh;
+  left: 90vw;
+}
+
+.socials i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.socials i.fa-facebook-f {
+  background: #3b5998;
+}
+
+.socials i.fa-instagram {
+  background: #8a3ab9;
+}
+
+.socials i.fa-youtube {
+  background: #bb0000;
+}
+
+.socials i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+/*********************
+mainHeader
+*********************/
+.mainHeader {
+  height: 80vh;
+  background-image: url(../slike/header1.webp);
+  background-position: center 30%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeader .headerText {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0 50px white;
+          box-shadow: 0 0 50px white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.mainHeader .headerText h1 {
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-size: 3rem;
+  line-height: 2.5;
+  text-align: center;
+}
+
+/*********************
+Istrazite
+*********************/
+.istrazite .linija {
+  display: block;
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(green), to(#1bafe9));
+  background: linear-gradient(to right, green, #1bafe9);
+  width: 10%;
+  height: 4px;
+  margin: 0 auto;
+}
+
+.istrazite .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.istrazite .row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.istrazite .row .col img {
+  height: 300px;
+  -webkit-box-shadow: 3px 3px 10px #555555;
+          box-shadow: 3px 3px 10px #555555;
+}
+
+.istrazite .row .col img:hover {
+  -webkit-box-shadow: 5px 5px 13px #555555;
+          box-shadow: 5px 5px 13px #555555;
+}
+
+.istrazite .row .col h4 {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #139edc;
+  padding: 10px;
+  background-color: white;
+  text-shadow: 0 0 1px black;
+  position: absolute;
+  bottom: 20px;
+  left: 18px;
+}
+
+/*********************
+Dogadjanja
+*********************/
+.dogadjanja .linija {
+  display: block;
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(green), to(#1bafe9));
+  background: linear-gradient(to right, green, #1bafe9);
+  width: 10%;
+  height: 4px;
+  margin: 0 auto;
+}
+
+.dogadjanja .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dogadjanja .row .wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+}
+
+.dogadjanja .row .wrapper div {
+  overflow: hidden;
+}
+
+.dogadjanja .row .wrapper div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .8;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.dogadjanja .row .wrapper .posts {
+  -webkit-box-shadow: 0 0 15px #555555;
+          box-shadow: 0 0 15px #555555;
+  position: relative;
+  top: -3px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.dogadjanja .row .wrapper .posts p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.dogadjanja .row .wrapper .posts h4 {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.dogadjanja .row .wrapper .posts button {
+  background: transparent;
+  border: 1px solid #555555;
+  padding: 10px 30px;
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dogadjanja .row .wrapper .posts button:hover {
+  color: white;
+  background-color: #139edc;
+  border: 1px solid #139edc;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+footer {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../slike/footer.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../slike/footer.jpg);
+  height: 80vh;
+  background-position: center 30%;
+}
+
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+footer .row .col h4 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+footer .row .col .linkovi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .row .col .linkovi a {
+  color: white;
+  line-height: 2;
+}
+/*# sourceMappingURL=index.css.map */

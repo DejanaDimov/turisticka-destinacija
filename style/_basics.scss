@@ -1,0 +1,51 @@
+//basic styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryColor;
+    font-family: Montserrat, sans-serif;
+    transition: .3s;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: $primaryColor;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $headingsTextColor;
+    text-align: center;
+    padding: 50px 0;
+    color: $primaryColor;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.py {
+    padding: 120px 0;
+}
+
+.bg-gray {
+    background-color: $articleBackgroundColor;
+}

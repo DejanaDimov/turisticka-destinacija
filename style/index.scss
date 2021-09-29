@@ -1,0 +1,209 @@
+@import 'variables';
+@import 'basics';
+@import 'mixins';
+
+
+
+/*********************
+navbar
+*********************/
+.navbar {
+    .linija {
+        @include line;
+        width: 100%;
+        height: 8px;
+        margin: 0px auto;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding-left: 30px;
+                font-weight: 600;
+                font-size: 1rem;
+                letter-spacing: 1.5px;
+
+                a {
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $lineColorBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*********************
+Socials
+*********************/
+.socials {
+    @include gliphicons;
+    position: fixed;
+    top: 40vh;
+    left: 90vw;
+    i:hover {
+        transform: scale(1.2);
+        transition: $transition;
+        //box-shadow: 2 2 5px $primaryColor;
+    }
+}
+
+
+/*********************
+mainHeader
+*********************/
+.mainHeader {
+    height: 80vh;
+    background-image: url(../slike/header1.webp);
+    background-position: center 30%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .headerText {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 50px white;
+        border-radius: 30px;
+        padding: 20px;
+        h1 {
+            color: white;
+            text-shadow: 0 0 2px black;
+            font-size: 3rem;
+            line-height: 2.5;
+            text-align: center;
+        }
+    }
+}
+
+
+/*********************
+Istrazite
+*********************/
+.istrazite {
+    .linija {
+        @include line;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .col {
+            flex: 0 0 48%;
+            position: relative;
+            margin-bottom: 40px;
+            img {
+                height: 300px;
+                box-shadow: 3px 3px 10px $primaryColor;
+                &:hover {
+                    box-shadow: 5px 5px 13px $primaryColor;
+                }
+            }
+            h4 {
+                display: inline-block;
+                font-size: 1.6rem;
+                font-weight: 900;
+                color: $headingsTextColor;
+                padding: 10px;
+                background-color: white;
+                text-shadow: 0 0 1px black;
+                position: absolute;
+                bottom: 20px;
+                left: 18px;
+            }
+        }
+    }
+}
+
+
+/*********************
+Dogadjanja
+*********************/
+.dogadjanja {
+    .linija{
+        @include line;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .wrapper {
+            flex: 0 0 31%;
+            div {
+                overflow: hidden;
+                img:hover { 
+                    transform: scale(1.1);
+                    opacity: .8; 
+                    transition: $transition; 
+                }
+            }
+            .posts {
+                box-shadow: 0 0 15px $primaryColor;
+                position: relative;
+                top: -3px;
+                padding: 20px;
+                z-index: 1;
+                
+                p {
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                }
+                h4 {
+                    font-size: 1.2rem;
+                    padding: 10px 0;
+                    font-weight: 700;
+                }
+                button {
+                    @include btn;
+                }
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    @include pozadinskeSlike;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../slike/footer.jpg);
+    height: 80vh;
+    background-position: center 30%;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        .col {
+            flex: 0 0 33%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            h4 {
+                font-size: 1.7rem;
+                font-weight: 900;
+                padding-bottom: 30px;
+            }
+            .linkovi {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a {
+                    color: white;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
